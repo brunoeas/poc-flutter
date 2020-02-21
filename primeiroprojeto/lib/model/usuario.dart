@@ -35,7 +35,7 @@ class Usuario {
     this.followers,
     this.following,
     this.createdAt,
-    this.updatedAt
+    this.updatedAt,
   });
 
   final String login;
@@ -74,37 +74,38 @@ class Usuario {
   factory Usuario.fromMap(Map map) {
     if (map != null) {
       return Usuario(
-          login: map['login'],
-          id: map['id'],
-          nodeId: map['nodeId'],
-          avatarUrl: map['avatarUrl'],
-          gravatarId: map['gravatarId'],
-          url: map['url'],
-          htmlUrl: map['htmlUrl'],
-          followersUrl: map['followersUrl'],
-          followingUrl: map['followingUrl'],
-          gistsUrl: map['gistsUrl'],
-          starredUrl: map['starredUrl'],
-          subscriptionsUrl: map['subscriptionsUrl'],
-          organizationsUrl: map['organizationsUrl'],
-          reposUrl: map['reposUrl'],
-          eventsUrl: map['eventsUrl'],
-          receivedEventsUrl: map['receivedEventsUrl'],
-          type: map['type'],
-          siteAdmin: map['siteAdmin'],
-          name: map['name'],
-          company: map['company'],
-          blog: map['blog'],
-          location: map['location'],
-          email: map['email'],
-          hireable: map['hireable'],
-          bio: map['bio'],
-          publicRepos: map['publicRepos'],
-          publicGists: map['publicGists'],
-          followers: map['followers'],
-          following: map['following'],
-          createdAt: map['createdAt'],
-          updatedAt: map['updatedAt']);
+        login: map['login'],
+        id: map['id'],
+        nodeId: map['nodeId'],
+        avatarUrl: map['avatarUrl'],
+        gravatarId: map['gravatarId'],
+        url: map['url'],
+        htmlUrl: map['htmlUrl'],
+        followersUrl: map['followersUrl'],
+        followingUrl: map['followingUrl'],
+        gistsUrl: map['gistsUrl'],
+        starredUrl: map['starredUrl'],
+        subscriptionsUrl: map['subscriptionsUrl'],
+        organizationsUrl: map['organizationsUrl'],
+        reposUrl: map['reposUrl'],
+        eventsUrl: map['eventsUrl'],
+        receivedEventsUrl: map['receivedEventsUrl'],
+        type: map['type'],
+        siteAdmin: map['siteAdmin'],
+        name: map['name'],
+        company: map['company'],
+        blog: map['blog'],
+        location: map['location'],
+        email: map['email'],
+        hireable: map['hireable'],
+        bio: map['bio'],
+        publicRepos: map['publicRepos'],
+        publicGists: map['publicGists'],
+        followers: map['followers'],
+        following: map['following'],
+        createdAt: map['createdAt'],
+        updatedAt: map['updatedAt'],
+      );
     } else {
       return Usuario();
     }
@@ -114,37 +115,38 @@ class Usuario {
   factory Usuario.fromAPI(Map map) {
     if (map != null) {
       return Usuario(
-          login: map['login'],
-          id: map['id'],
-          nodeId: map['node_id'],
-          avatarUrl: map['avatar_url'],
-          gravatarId: map['gravatarId'],
-          url: map['url'],
-          htmlUrl: map['html_url'],
-          followersUrl: map['followers_url'],
-          followingUrl: map['followin_url'],
-          gistsUrl: map['gists_url'],
-          starredUrl: map['starred_url'],
-          subscriptionsUrl: map['subscriptions_url'],
-          organizationsUrl: map['organizations_url'],
-          reposUrl: map['repos_url'],
-          eventsUrl: map['events_url'],
-          receivedEventsUrl: map['received_events_url'],
-          type: map['type'],
-          siteAdmin: map['site_admin'],
-          name: map['name'],
-          company: map['company'],
-          blog: map['blog'],
-          location: map['location'],
-          email: map['email'],
-          hireable: map['hireable'],
-          bio: map['bio'],
-          publicRepos: map['public_repos'],
-          publicGists: map['public_gists'],
-          followers: map['followers'],
-          following: map['following'],
-          createdAt: map['created_at'],
-          updatedAt: map['updated_at']);
+        login: map['login'],
+        id: map['id'],
+        nodeId: map['node_id'],
+        avatarUrl: map['avatar_url'],
+        gravatarId: map['gravatarId'],
+        url: map['url'],
+        htmlUrl: map['html_url'],
+        followersUrl: map['followers_url'],
+        followingUrl: map['followin_url'],
+        gistsUrl: map['gists_url'],
+        starredUrl: map['starred_url'],
+        subscriptionsUrl: map['subscriptions_url'],
+        organizationsUrl: map['organizations_url'],
+        reposUrl: map['repos_url'],
+        eventsUrl: map['events_url'],
+        receivedEventsUrl: map['received_events_url'],
+        type: map['type'],
+        siteAdmin: map['site_admin'],
+        name: map['name'],
+        company: map['company'],
+        blog: map['blog'],
+        location: map['location'],
+        email: map['email'],
+        hireable: map['hireable'],
+        bio: map['bio'],
+        publicRepos: map['public_repos'],
+        publicGists: map['public_gists'],
+        followers: map['followers'],
+        following: map['following'],
+        createdAt: map['created_at'],
+        updatedAt: map['updated_at'],
+      );
     } else {
       return Usuario();
     }
@@ -182,7 +184,7 @@ class Usuario {
         "followers": followers,
         "following": following,
         "createdAt": createdAt,
-        "updatedAt": updatedAt
+        "updatedAt": updatedAt,
       };
 
   /// Dados instânciados para um [Map] no padrão da API
@@ -217,7 +219,6 @@ class Usuario {
         "followers": followers,
         "following": following,
         "created_at": createdAt,
-        "updated_at": updatedAt
+        "updated_at": updatedAt,
       };
-
 }
