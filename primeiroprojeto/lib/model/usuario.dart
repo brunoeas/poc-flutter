@@ -119,7 +119,7 @@ class Usuario {
         id: map['id'],
         nodeId: map['node_id'],
         avatarUrl: map['avatar_url'],
-        gravatarId: map['gravatarId'],
+        gravatarId: map['gravatar_id'],
         url: map['url'],
         htmlUrl: map['html_url'],
         followersUrl: map['followers_url'],

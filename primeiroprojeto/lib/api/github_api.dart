@@ -19,8 +19,10 @@ class GithubAPI {
   ///
   /// Retorna 30 Usuários antes do ID passado por parâmetro
   ///
-  Future<http.Response> findAllUsuarios([int lastId = 30]) async {
-    return await http.get("$githubApiUrl/users?since=$lastId",
-        headers: headers);
+  Future<http.Response> findAllUsuarios([int lastId = 43659977]) async {
+    return await http.get(
+      "$githubApiUrl/users?since=$lastId",
+      headers: headers,
+    );
   }
 }
