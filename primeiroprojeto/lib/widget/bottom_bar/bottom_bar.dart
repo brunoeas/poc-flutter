@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 /// [author: Bruno Eduardo]
 ///
 class BottomBar extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -18,12 +17,11 @@ class BottomBar extends StatelessWidget {
           title: Text('Usuários', style: TextStyle(color: Colors.white)),
         ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.person_add, color: Colors.white),
-            activeIcon: Icon(Icons.person_add, color: Colors.white30),
-            title: Text('Salvos', style: TextStyle(color: Colors.white))
-        )
+          icon: Icon(Icons.person_add, color: Colors.white),
+          activeIcon: Icon(Icons.person_add, color: Colors.white30),
+          title: Text('Salvos', style: TextStyle(color: Colors.white)),
+        ),
       ],
     );
   }
-
 }
